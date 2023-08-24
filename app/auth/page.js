@@ -6,7 +6,7 @@ import { ThemeSupa } from '@supabase/auth-ui-shared';
 import Link from 'next/link';
 
 export default function AuthPage() {
-    const supabase = createClientComponentClient();
+    const supabase = createClientComponentClient() || undefined ;
 
     return (
       <>
