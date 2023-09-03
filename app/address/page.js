@@ -61,7 +61,7 @@ export default function Home() {
         setAddress(result.address)
         setZipcode(result.zipcode)
         setCity(result.city)
-        setCountry(result.country)
+        
     }
 
     const validate = () => {
@@ -81,10 +81,7 @@ export default function Home() {
         } else if (!city) {
             setError({ type: 'city', message: 'A city is required'})
             isError = true
-        } else if (!country) {
-            setError({ type: 'country', message: 'A country is required'})
-            isError = true
-        }
+        } 
         return isError
     }
 
